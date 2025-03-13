@@ -13,7 +13,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 using ASC.Utilities;
-
 namespace ASC.Tests
 {
     public class HomeControllerTests
@@ -21,7 +20,6 @@ namespace ASC.Tests
         private readonly Mock<IOptions<ApplicationSettings>> optionsMock;
         private readonly Mock<HttpContext> mockHttpContext;
         private readonly Mock<ILogger<HomeController>> loggerMock;
-
         public HomeControllerTests()
         {
             optionsMock = new Mock<IOptions<ApplicationSettings>>();
