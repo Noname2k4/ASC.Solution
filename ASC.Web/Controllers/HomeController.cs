@@ -17,12 +17,6 @@ public class HomeController : Controller
         _settings = settings;
     }
 
-    //public IActionResult Index()
-    //{
-    //    ViewBag.Title = _settings.Value.ApplicationTitle;
-    //    return View();
-    //}
-
     public IActionResult Index()
     {
         HttpContext.Session.SetSession("Test", _settings.Value);
